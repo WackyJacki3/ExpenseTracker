@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './ExpenseList.module.css'
-import Card from './card';
+import Card from './Card';
 import { useSelector } from 'react-redux';
 import { addExpense } from '../../redux/actions/actions'; 
 import { toast, ToastContainer } from 'react-toastify';
@@ -10,6 +10,7 @@ const ExpenseList = () => {
     
     const expenses = useSelector((state) => state.expenseList);
     const query = useSelector((state) => state.expenseList);
+
     const notifySuccess = () => toast.success("Expense Deleted!");
     // console.log(expenses);
     // const array = expenseList.length;

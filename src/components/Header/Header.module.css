@@ -1,0 +1,70 @@
+.headerContainer {
+    width: 50%;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 12px;
+}
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 500;
+    gap: 6px;
+}
+
+.headerButton {
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+.headerButton i {
+    margin-right: 4px;
+    font-size: 20px;
+}
+
+.headerButton a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+    .headerContainer {
+        width: 90%;
+    }
+    .headerLogo {
+        font-size: 28px;
+    }
+    .headerButton {
+        font-size: 15px;
+    }
+    .headerButton i {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .headerContainer {
+        width: 100%;
+    }
+    .headerLogo {
+        font-size: 24px;
+    }
+    .headerButton {
+        font-size: 13px;
+    }
+    .headerButton i {
+        font-size: 16px;
+    }
+}
